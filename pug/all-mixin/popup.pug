@@ -3,7 +3,7 @@ mixin popup-template(num, topicModal, textModal, visibility, addClass)
     .popup.element-show.show(data-element= num  class= addClass)
       .popup-overlay.popup-overlay-js
       .popup-container 
-        .close-btn--black.close-btn_popup.close-js
+        .close-btn.close-btn_popup.close-js
         .main-full
           if topicModal
             h2= topicModal
@@ -16,7 +16,7 @@ mixin popup-template(num, topicModal, textModal, visibility, addClass)
     .popup.element-show(data-element=num class=addClass)
       .popup-overlay.popup-overlay-js
       .popup-container
-        .close-btn--black.close-btn_popup.close-js
+        .close-btn.close-btn_popup.close-js
         .main-full
           if topicModal
             h2= topicModal

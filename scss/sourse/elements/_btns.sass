@@ -78,19 +78,41 @@ a.pagination-next
     background-color: $whiteColor
     background-image: url("../images/controls/arrow-right-black.svg")
 
+.ico-in
+  i,span
+    vertical-align: middle
+    display: inline-block
+  i
+    font-size: 0
+    position: relative
+  .back-ico
+    visibility: hidden
+
+  .front-ico
+    position: absolute
+    left: 0
+    top: 0
+  &.active,
+  &:hover
+    text-decoration: none
+
+    .back-ico
+      visibility: visible
+    .front-ico
+      visibility: hidden
+
 /*pagination page end*/
 
-.close-btn--black
+.close-btn
   @include icoEl(30px, 30px, "../images/controls/close-black.svg")
   cursor: pointer
-.close-btn--white
-  @include icoEl(30px, 30px, "../images/controls/close-white.svg")
-  cursor: pointer
+  &:hover
+    background-image: url("../images/controls/close-white.svg")
 
-.hamburger-btn--white
+.hamburger-btn
   @include icoEl(30px, 30px, "../images/controls/hamburger-white.svg")
-.hamburger-btn--black
-  @include icoEl(30px, 30px, "../images/controls/hamburger-black.svg")
+  &:hover
+    background-image: url("../images/controls/hamburger-black.svg")
 
 .back-link
   text-decoration: none

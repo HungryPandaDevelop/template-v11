@@ -1,11 +1,11 @@
-+popup-template(2,'Поиск по сайту',false,0,'popup__search')
-	- var searchField = [["text","Введите поисковой запрос ...","form--col__full search-field"],["submit","btn btn-send btn--black","Поиск"]];
++popup-template(2,'Поиск по сайту',false,0,'popup-search')
+	- var searchField = [["text","Введите поисковой запрос ...","col-12 search-field"],["submit","btn btn-send btn--black","Поиск"]];
 	+form(searchField)
-	.popup__search__results
+	.popup-search-results
 		h2 Реузльтаты
 		.form-grid
 			-for(var x = 0; x<4 ;x++)
-				.popup__search__results-item
+				.popup-search-results-item
 					h3 Category 
 					ul.ln
 						-for(var a = 0; a<5 ;a++)

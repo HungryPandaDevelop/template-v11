@@ -23,27 +23,16 @@ header
 		margin: 0
 		@include positionElement(100%, 1px, 0, 0, left, bottom)
 
-	nav
+.header-nav
+	display: flex
+
+	ul
 		display: flex
-
-		ul
-			display: flex
-			width: 100%
-			margin: auto 0
-			justify-content: space-between
-		li
-			display: inline-block
-nav
-
-	ul,
+		width: 100%
+		margin: auto 0
+		justify-content: space-between
 	li
-		padding: 0
-		margin: 0
-		list-style: none
-
-		a
-			text-decoration: none
-			font-family: inherit
+		display: inline-block
 
 .logo
 
@@ -57,7 +46,9 @@ nav
 		width: 100%
 		max-width: 210px
 
-.hamburger-container
+.hamburger-btn
+	img
+		width: 30px
 
 .logo-container
 

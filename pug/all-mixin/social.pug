@@ -1,45 +1,47 @@
-mixin social(v,i,tw,f,y,g)
+mixin social(val)
   .social
-    if v == 'v'
-      a(href="#")
-        img(src="../images/social/vk.svg", alt="")
-    if v == 'vw'
-      a(href="#").social-ico--white
-        img(src="../images/social/vk-white.svg", alt="")
-    if i == 'i'
-      a(href="#")
-        img(src="../images/social/instagram.svg", alt="")
-    if i == 'iw'
-      a(href="#").social-ico--white
-        img(src="../images/social/instagram-white.svg", alt="")
-    if tw == 'tw'
-      a(href="#")
-        img(src="../images/social/twitter.svg", alt="")
-    if tw == 'tww'
-      a(href="#").social-ico--white
-        img(src="../images/social/twitter-white.svg", alt="")
-    if f == 'f'
-      a(href="#")
-        img(src="../images/social/facebook.svg", alt="")
-    if f == 'fw'
-      a(href="#").social-ico--white
-        img(src="../images/social/facebook-white.svg", alt="")
-    if y == 'y'
-      a(href="#")
-        img(src="../images/social/youtube.svg", alt="")
-    if y == 'yw'
-      a(href="#").social-ico--white
-        img(src="../images/social/youtube-white.svg", alt="")
-    if g == 'g'
-      a(href="#")
-        img(src="../images/social/google.svg", alt="")
-    if g == 'gw'
-      a(href="#").social-ico--white
-        img(src="../images/social/google-white.svg", alt="")
-    if tl == 'tl'
-      a(href="#")
-        img(src="../images/social/telegram.svg", alt="")
-    if tl == 'tlw'
-      a(href="#").social-ico--white
-        img(src="../images/social/telegram-white.svg", alt="")
+    - for (var i=0; i<val.length; i++)
+        case val[i]
+          when 'v'
+            a(href="#")
+              img(src="/images/social/vk.svg", alt="")
+          when 'vw'
+            a(href="#").social-ico--white
+              img(src="/images/social/vk-white.svg", alt="")
+          when 'i'
+            a(href="#")
+              img(src="/images/social/instagram.svg", alt="")
+          when 'iw'
+            a(href="#").social-ico--white
+              img(src="/images/social/instagram-white.svg", alt="")
+          when 'tw'
+            a(href="#")
+              img(src="/images/social/twitter.svg", alt="")
+          when 'tww'
+            a(href="#").social-ico--white
+              img(src="/images/social/twitter-white.svg", alt="")
+          when 'f'
+            a(href="#")
+              img(src="/images/social/facebook.svg", alt="")
+          when 'fw'
+            a(href="#").social-ico--white
+              img(src="/images/social/facebook-white.svg", alt="")
+          when 'y'
+            a(href="#")
+              img(src="/images/social/youtube.svg", alt="")
+          when 'yw'
+            a(href="#").social-ico--white
+              img(src="/images/social/youtube-white.svg", alt="")
+          when 'g'
+            a(href="#")
+              img(src="/images/social/google.svg", alt="")
+          when 'gw'
+            a(href="#").social-ico--white
+              img(src="/images/social/google-white.svg", alt="")
+          when 'tl'
+            a(href="#")
+              img(src="/images/social/telegram.svg", alt="")
+          when 'tlw'
+            a(href="#").social-ico--white
+              img(src="/images/social/telegram-white.svg", alt="")
         
