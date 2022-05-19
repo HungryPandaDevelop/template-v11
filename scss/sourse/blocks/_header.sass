@@ -1,7 +1,7 @@
 $headerHeight: 120px
 .stub
 	height: $headerHeight
-//(PE-- W, H, L, T, LR, TB, Z, D, P)
+
 header
 	@include positionElement(100%, auto, 0, auto, left, top, 2, fixed )
 	color: $whiteColor
@@ -23,6 +23,11 @@ header
 		margin: 0
 		@include positionElement(100%, 1px, 0, 0, left, bottom)
 
+	.hamburger-btn
+
+		margin-left: auto
+		img
+			width: 30px
 .header-nav
 	display: flex
 
@@ -35,7 +40,6 @@ header
 		display: inline-block
 
 .logo
-
 	position: relative
 	display: flex
 
@@ -43,14 +47,10 @@ header
 		margin: auto 0
 
 	img
-		width: 100%
-		max-width: 210px
-
-.hamburger-btn
-	img
-		width: 30px
-
-.logo-container
+		width: 60px
+		height: 60px
+		object-fit: contain
+		border-radius: 100%
 
 .sigin-container
 

@@ -739,37 +739,37 @@ section h2 {
 
 @media (max-width: 1680px) {
   .hidden-xxl {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 1680px) {
   .hidden-xl {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 1440px) {
   .hidden-xxl {
-    display: none;
+    display: none !important;
   }
 }
-@media (max-width: 1280px) {
+@media (min-width: 1200px) {
   .hidden-lg {
-    display: none;
+    display: none !important;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
-    display: none;
+    display: none !important;
   }
 }
-@media (max-width: 768) {
+@media (min-width: 577px) and (max-width: 991px) {
   .hidden-sm {
-    display: none;
+    display: none !important;
   }
 }
-@media (max-width: 576) {
+@media (max-width: 576px) {
   .hidden-xs {
-    display: none;
+    display: none !important;
   }
 }
 /*-----grid-end----*/
@@ -1152,6 +1152,12 @@ header hr {
   left: 0;
   bottom: 0;
 }
+header .hamburger-btn {
+  margin-left: auto;
+}
+header .hamburger-btn img {
+  width: 30px;
+}
 
 .header-nav {
   display: -webkit-box;
@@ -1182,12 +1188,11 @@ header hr {
   margin: auto 0;
 }
 .logo img {
-  width: 100%;
-  max-width: 210px;
-}
-
-.hamburger-btn img {
-  width: 30px;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100%;
 }
 
 .sigin-container * {

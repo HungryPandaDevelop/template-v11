@@ -1,22 +1,20 @@
 header.header-black
 	.main-grid.headline.headline--black
-		.hamburger-container.vertical-align.col-1
-			a(href="#").hamburger-btn.element-btn(data-element="0")
-		.logo-container.vertical-align.col-2 
+		.logo-container.vertical-align.col-2.col-sm-2.col-xs-6
 			a.logo(href="#") 
-				img(src="/images/logo.svg", alt="")
-		.sigin-container.vertical-align.col-3.col-md-6
+				img(src="/images/logo.jpg", alt="")
+		.sigin-container.vertical-align.col-3.col-md-4.col-sm-4
 			+log-reg(0)
-
-		.city-container.vertical-align.col-2.col-lg-3.hidden-md
+		.city-container.vertical-align.col-2.col-lg-3.col-md-3
 			.city-body
 				em Ваш Город: 
 				a(href="#")  Москва
-		.controls-container.vertical-align.col-4.col-lg-3
+		.controls-container.vertical-align.col-5.col-lg-4.col-md-2
 			.controls-body
 				a(href="#").element-btn(data-element="2").loop-ico
 				a(href="#").basket-ico
-
+		.hamburger-container.vertical-align.col-1.hidden-lg.hidden-md
+			a(href="#").hamburger-btn.element-btn(data-element="0")
 		hr.col-12
 	.main-grid.headerline
 		nav.header-nav.nav.col-7
